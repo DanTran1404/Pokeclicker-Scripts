@@ -26,7 +26,7 @@ function initBallAdjust() {
     for (var i = 0; i < getBalls.length; i++) {
         defaultTime.push(getBalls[i].catchTime)
     }
-    var ballCont = document.getElementById('pokeballSelectorBody').querySelector('thead');
+    var ballCont = document.getElementById('pokeballSelectorBody').querySelector('table');
     var ballAdj = document.createElement("tr");
     ballAdj.innerHTML = `<td colspan="4"><div style="height: 25px;"><label for="ball-adjust">0 Delay Capture <label><input id="ball-adjust" type="checkbox" style="position: relative;top: 2px;"></div></td>`
     ballCont.append(ballAdj)
